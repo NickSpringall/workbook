@@ -23,7 +23,13 @@ let someString = "3"
 let someNum = 3
 let someBool = true
 
-someResult = someString + someBool
+someResult = Number(someString) + String(someBool)
 
-console.log(someResult) // => 3true
-console.log(typeof(someResult)) // => string
+console.log(someResult) // => 4
+console.log(typeof(someResult)) // => number
+
+
+
+let someArray = [6, 4, "6", [6,"230", true]]
+
+console.log((String(someArray)))  // => 6,4,6,6,230,true

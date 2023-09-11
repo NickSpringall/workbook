@@ -1,3 +1,8 @@
+## Q7 - Explain control flow, using an example from the JavaScript programming language
+
+
+
+
 ## Q8 - Explain type coercion, using examples from the JavaScript programming language
 
 Java Script is a dynamically typed language, this means that while they can be, data types do not need to be explicitly defined when declaring a variable. If no data type is explicitly defined, JavaScript will automatically define it for you. In much the same way, JavaScript can also change a variable's type automatically when needed to perform a task in the program. 
@@ -16,7 +21,7 @@ console.log(someResult) // => 4
 console.log(typeof(someResult)) // => number
 ```
 
-wheras in the following code, providing 3 as a string value will result in both values becoming strings and the + concatinating them together.
+wheras in the following code, providing 3 as a string value will result in both values being coerced into strings and the + concatinating them together.
 
 ```let someString = "3"
 let someNum = 3
@@ -57,4 +62,45 @@ console.log("not the same type")
 // => "the same type"
 ```
 
-Types can also be coerced explicitly in JavaScript. 
+Types can also be coerced explicitly in JavaScript. Typically using built in JavaScript methods. Using the example above, using explicit type conversion, the string can be coerced into a number or vice versa to control how the program exectues the operation. 
+
+```
+let someString = "3"
+let someBool = true
+
+someResult = Number(someString) + someBool
+
+console.log(someResult) // => 4
+console.log(typeof(someResult)) // => number
+```
+
+Similarly, the boolean value can also be coerced into a string
+
+```
+let someString = "3"
+let someBool = true
+
+someResult = Number(someString) + String(someBool)
+
+console.log(someResult) // => 3true
+console.log(typeof(someResult)) // => string
+```
+
+It is important to note that there are limits to type coercion and not all values can be, or will return a useable value once coerced. While the array in the following code contains values that can individually coerced into a number. Though,the array object itself cannot be.
+
+```
+let someArray = [6, 4, "6", [6,"230", true]]
+
+console.log(Number(someArray)) // => NaN
+```
+
+While the String function will output the values contained within the array as a string 
+
+```
+let someArray = [6, 4, "6", [6,"230", true]]
+
+console.log((String(someArray)))  // => 6,4,6,6,230,true
+```
+
+
+
