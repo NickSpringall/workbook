@@ -1,5 +1,8 @@
 ## Q7 - Explain control flow, using an example from the JavaScript programming language
 
+Control flow is the order in which a program excecutes a block of code. By default, JavaScript is a sequentially executed programming languag. This means that without encountering explicit logic to alter the flow, code will be executed line by line, from top to bottom. 
+
+
 
 
 
