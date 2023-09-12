@@ -1,35 +1,18 @@
-// let someNum = 3
-// let someString = "3"
-
-// if (someNum === someString) {
-//     console.log("the same type")
-// } else {
-//     console.log("not the same type")
-// }
-// // will log "not the sametype"
+let someArray = [0, 1, 2, 3, 4]
+let newArray = []
 
 
-
-// if (someNum == someString) {
-//     console.log("the same type")
-// } else 
-// console.log("not the same type")
-// // will log "the same type"
+for (index = 0; index < someArray.length; index ++) {
 
 
+    if (newArray.length != 3) {
+        newArray.push(someArray[index])
+    }
+    console.log(newArray) 
+}
 
-
-let someString = "3"
-let someNum = 3
-let someBool = true
-
-someResult = Number(someString) + String(someBool)
-
-console.log(someResult) // => 4
-console.log(typeof(someResult)) // => number
-
-
-
-let someArray = [6, 4, "6", [6,"230", true]]
-
-console.log((String(someArray)))  // => 6,4,6,6,230,true
+// => [ 0 ]
+// [ 0, 1 ]
+// [ 0, 1, 2 ]
+// [ 0, 1, 2 ]
+// [ 0, 1, 2 ]

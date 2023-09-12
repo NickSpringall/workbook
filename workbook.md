@@ -1,9 +1,48 @@
 ## Q7 - Explain control flow, using an example from the JavaScript programming language
 
-Control flow is the order in which a program excecutes a block of code. By default, JavaScript is a sequentially executed programming languag. This means that without encountering explicit logic to alter the flow, code will be executed line by line, from top to bottom. 
+Control flow is the order in which lines or blocks of code are excecuted when run. By default, JavaScript is a sequentially executed programming language. This means that without encountering explicit logic or statements to alter the flow, code will be executed line by line, from top to bottom. 
+
+Flow altering code can typically be broken down into two categories,iterative and conditional logic. Conditinal statements evaluates a set condition and either skip or execute code depending on a given condition being true or false. In JavaScript the main conditional statements are if/else/else if and switch stataments. 
+
+If, else and else if statements work exactly as can be infered from the words themselves. An if statement will skip or run code depending on the truthy or falsy value of a condition. An if statement can be used by itself or in conjunction with else and else if statements. An else statement will run code only if the preceeding if statement has NOT run and will always execute if the if statement doesn't run. An else if statement works similarly except it will only run if both the preceeding if statement did not run and a further condition is met. 
+
+A switch statement is an efficient way of executing similar logic where there are multiple possible outcomes for an expression to be tested against. A switch statement executes an expression only once, and will compare the result against multiple cases, executing code when a case matches or a default value when there are no matches.
+
+Iterative statements, also known as loops, will repeat the same code until a condition is met. These can broadly be defined as for loops and while loops. While loops assess a condition and run some code if the condition is true, then reassess and repeat the processes until the condition is evaluated as false. 
+
+A standard for loop consist of 3 expressions, the first expresion executes once at the start of the loop and typically defines a variable to be used by the loop logic. The second expression contains a conditional expression that defines when the loop repeats or stops. The third expression runs after each iteration of the loop.
+
+The following example demonstrates these concepts, the code will run from top down, initialising the 2 variables and entering the for loop.
+
+The for loop runs while the index variable is less than the length of someArray, 5 times in total. 
+
+Inside the loop the code meets a conditional if statement. The condition is assesed (is the new array 3 elements long?) and uses the index value of the for loop to access the index within the someArray variable and pushes this value to the new array.
+
+It's important to note that the loop will still run even after the if condition has been met, skipping the if statement (as it now returns false) and logging the array. 
+
+```
+let someArray = [0, 1, 2, 3, 4]
+let newArray = []
 
 
+for (index = 0; index < someArray.length; index ++) {
 
+
+    if (newArray.length != 3) {
+        newArray.push(someArray[index])
+    }
+    console.log(newArray) 
+}
+
+// => [ 0 ]
+// [ 0, 1 ]
+// [ 0, 1, 2 ]
+// [ 0, 1, 2 ]
+// [ 0, 1, 2 ]
+```
+
+
+Functions are handled differently to the 
 
 
 ## Q8 - Explain type coercion, using examples from the JavaScript programming language
