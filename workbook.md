@@ -143,5 +143,10 @@ let someArray = [6, 4, "6", [6,"230", true]]
 console.log((String(someArray)))  // => 6,4,6,6,230,true
 ```
 
+## Q9 - Explain data types, using examples from the JavaScript programming language
 
+In order for a program to use and interact with some data within a variable, it must first know what that data is. Data types represent the clasifications of different kinds of data and inform a compiler or interpretor how to treat it. 
 
+JavaScript uses the following primitive data types; null, undefined, boolean, string, number, bigint annd symbol. It has one complex data type - object.
+
+Null and undefined are equal
