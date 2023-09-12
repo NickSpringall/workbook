@@ -14,10 +14,10 @@ function Instrument(name, family, pitch, volume) {
 
 let violin = new Instrument("violin", "String", "treble")
 
-console.log (violin)
+// console.log (violin)
 
 violin.volume = "soft"
-console.log(violin) 
+// console.log(violin) 
 
 // =>  Instrument {
     //     name: 'violin',
@@ -27,7 +27,7 @@ console.log(violin)
 //   }
 
 violin["volume"] = "loud"
-console.log(violin)
+// console.log(violin)
 
 // Instrument {
 //     name: 'violin',
@@ -38,7 +38,7 @@ console.log(violin)
 
 violin.timber = "maple"
 violin["size of instrument"] = "small"
-console.log(violin)
+// console.log(violin)
 
 // Instrument {
 //     name: 'violin',
@@ -49,3 +49,8 @@ console.log(violin)
 //     size: 'small'
 //   }
 
+console.log(Object.keys(violin)) 
+// => [ 'name', 'family', 'pitch', 'volume', 'timber', 'size of instrument' ]
+
+console.log(Object.values(violin))
+//  => [ 'violin', 'String', 'treble', 'loud', 'maple', 'small' ]

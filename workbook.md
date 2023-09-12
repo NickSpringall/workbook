@@ -249,7 +249,7 @@ This callback function subtracts one element from the if num1 is less than num2,
 
 ## Q11 Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
 
-Objects can be manipulated in many ways. For example, elements can be accessed using dot or bracket notation, values and properties can be enumerated in severl ways and elements can be manipulated with operators.
+Objects can be manipulated in many ways. For example, elements can be accessed using dot or bracket notation, values and properties can be enumerated in severel ways and elements can be manipulated with operators.
 
 Constructor functions can be used to create object instances - 
 
@@ -269,7 +269,7 @@ The values of the violin object can be manipulated by both dot and bracket notat
 violin.volume = "soft"
 console.log(violin) 
 
-// =>  Instrument {
+//  =>  Instrument {
     //     name: 'violin',
     //     family: 'String',
     //     pitch: 'treble',
@@ -279,27 +279,41 @@ console.log(violin)
 violin["volume"] = "loud"
 console.log(violin)
 
-// Instrument {
-//     name: 'violin',
-//     family: 'String',
-//     pitch: 'treble',
-//     volume: 'loud'
-//   }
+//  =>  Instrument {
+    //     name: 'violin',
+    //     family: 'String',
+    //     pitch: 'treble',
+    //     volume: 'loud'
+    //   }
 ```
 
-we can similarly use the same notation to add new properties to the object. Though only brackets notation can be used if the property name is not a valid JavaScript identified (ie, no spaces or hyphons, cannot be within another variable, cannot begin with a number ect.). In these cases, bracket notation must be used
+We can similarly use the same notation to add new properties to the object. Though only brackets notation can be used if the property name is not a valid JavaScript identified (ie, no spaces or hyphons, cannot be within another variable, cannot begin with a number ect.). In these cases, bracket notation must be used.
 
 ```
 violin.timber = "maple"
 violin["size of instrument"] = "small"
 console.log(violin)
 
-// Instrument {
-//     name: 'violin',
-//     family: 'String',
-//     pitch: 'treble',
-//     volume: 'loud',
-//     timber: 'maple',
-//     'size of instrument': 'small'
-//   }
+//  =>  Instrument {
+    //     name: 'violin',
+    //     family: 'String',
+    //     pitch: 'treble',
+    //     volume: 'loud',
+    //     timber: 'maple',
+    //     'size of instrument': 'small'
+    //   }
 ```
+
+
+The Object.keys() and Object.Values() methods return arrays of the keys or values of an object respectively.
+
+```
+console.log(Object.keys(violin)) 
+
+// => [ 'name', 'family', 'pitch', 'volume', 'timber', 'size of instrument' ]
+
+console.log(Object.values(violin))
+
+//  => [ 'violin', 'String', 'treble', 'loud', 'maple', 'small' ]
+```
+
