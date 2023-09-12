@@ -1,18 +1,15 @@
-let someArray = [0, 1, 2, 3, 4]
-let newArray = []
+let someArray = ["pink", "blue", "green", "purple","yellow"]
 
+let list = someArray.map((element) => {
+    return '<li>' + element + '</li>'
+})
 
-for (index = 0; index < someArray.length; index ++) {
+console.log(list) // =>  
 
-
-    if (newArray.length != 3) {
-        newArray.push(someArray[index])
-    }
-    console.log(newArray) 
-}
-
-// => [ 0 ]
-// [ 0, 1 ]
-// [ 0, 1, 2 ]
-// [ 0, 1, 2 ]
-// [ 0, 1, 2 ]
+[
+    '<li>pink</li>',
+    '<li>blue</li>',
+    '<li>green</li>',
+    '<li>purple</li>',
+    '<li>yellow</li>'
+  ]

@@ -150,3 +150,66 @@ In order for a program to use and interact with some data within a variable, it 
 JavaScript uses the following primitive data types; null, undefined, boolean, string, number, bigint annd symbol. It has one complex data type - object.
 
 Null and undefined are equal
+
+## Q10 - Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
+
+There are many ways to manipulate arrays in JavaScript. There aremany built in methods to achieve just anout anything you would wish to do.
+
+for removing or deleting elements, the pop() and push() methods can be used to remove the last element or add a new element to the end respectivly -
+
+```
+let someArray = [0, 1, 2, 3, 4]
+
+someArray.pop()
+console.log(someArray) // => [ 0, 1, 2, 3 ]
+
+someArray.push("new element")
+console.log(someArray) // => [ 0, 1, 2, 3, 'new element' ]
+```
+
+the push() method is highly flexible as it can be used to add any data type or multiple elements to the array -
+
+```
+let someArray = [0, 1, 2, 3, 4]
+
+someArray.push(["a","sub", "array"])
+someArray.push(5,6,7,)
+console.log(someArray) // => [ 0, 1, 2, 3, 4, [ 'a', 'sub', 'array' ], 5, 6, 7 ]
+```
+
+Some other examples of the many array manipulation methods are the slice() and splice() methods. The slice() method is used to extract the value of some elements from an array and returning them to a new array, it takes the start and finish index of the elements to be extracted and does not alter the original array. splice() works similarly but removes the elements from the original array.
+
+```
+let someArray = [0, 1, 2, 3, 4, 5, 6, 7]
+
+let newArray = someArray.slice(2,5)
+
+console.log(someArray) // => [ 0, 1, 2, 3, 4, 5, 6, 7 ]
+console.log(newArray) // => [ 2, 3, 4 ]
+
+let splicedArray = someArray.splice(2,5)
+
+console.log(someArray) // =>[ 0, 1, 7 ]
+console.log(splicedArray) // => [ 2, 3, 4, 5, 6 ]
+```
+
+the map() method iterates over each element, calling a callback function on each element and creating a new array of the returned values. This is extremely useful for many tasks, one example is creating an array of HTML elements from an array ready to pass onto the DOM - 
+
+```
+let someArray = ["pink", "blue", "green", "purple","yellow"]
+
+let list = someArray.map((element) => {
+    return '<li>' + element + '</li>'
+})
+
+console.log(list) // =>  
+
+[
+    '<li>pink</li>',
+    '<li>blue</li>',
+    '<li>green</li>',
+    '<li>purple</li>',
+    '<li>yellow</li>'
+  ]
+  ```
+
