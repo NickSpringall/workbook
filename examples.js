@@ -1,5 +1,22 @@
-let someArray = [100, 2, 390, 28, 9, 6000]
+let someObject = { 
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value3"
+}
 
-console.log(someArray.sort((num1, num2) => {
-    return num1 - num2
-})); // => [ 2, 9, 28, 100, 390, 6000 ]
+
+function Instrument(family, pitch, volume) {
+    this.family = family
+    this.pitch = pitch;
+    this.volume = volume;
+}
+
+let violin = new Instrument("String", "treble")
+
+console.log (violin)
+
+violin.volume = "soft"
+console.log(violin) // =>  { family: 'String', pitch: 'treble', volume: 'soft' }
+
+violin["volume"] = "loud"
+console.log(violin)

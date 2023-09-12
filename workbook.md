@@ -247,3 +247,32 @@ console.log(someArray.sort((num1, num2) => {
 
 This callback function subtracts one element from the if num1 is less than num2, it will return a negative value and num1 will be sorted below num2 and vice versa if num1 is greater than num2.
 
+## Q11 Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
+
+Objects can be manipulated in many ways. For example, elements can be accessed using dot or bracket notation, values and properties can be enumerated in severl ways and elements can be manipulated with operators.
+
+Constructor functions can be used to create object instances - 
+
+```
+function Instrument(family, pitch, volume) {
+    this.family = family
+    this.pitch = pitch;
+    this.volume = volume;
+}
+let violin = new Instrument("String", "treble", "")
+```
+
+The values of the violin object can be manipulated by both dot and bracket notation
+
+```
+violin.volume = "soft"
+console.log(violin) 
+
+// =>  { family: 'String', pitch: 'treble', volume: 'soft' }
+
+violin["volume"] = "loud"
+console.log(violin)
+
+// => { family: 'String', pitch: 'treble', volume: 'loud' }
+```
+
