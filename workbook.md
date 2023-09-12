@@ -153,7 +153,7 @@ Null and undefined are equal
 
 ## Q10 - Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
 
-There are many ways to manipulate arrays in JavaScript. There aremany built in methods to achieve just anout anything you would wish to do.
+There are many ways to manipulate arrays in JavaScript. The primary way we ado this is through the use of built in JavaScript methods to achieve just about anything you would wish to do to an array.
 
 for removing or deleting elements, the pop() and push() methods can be used to remove the last element or add a new element to the end respectivly -
 
@@ -212,4 +212,38 @@ console.log(list) // =>
     '<li>yellow</li>'
   ]
   ```
+
+Array manipulation methods that do not alter the array, but rather make a copy (such as slice() and map()) are known as non-destructive methods. In contrast, destructive methods alter the array variable itself in some way (such as splice() and pop()).
+
+
+It is important to understand how JavaScript treates the data in each array element in some manipulation methods. For example, the sort() method will sort an array in the following example, we can see how the method rearranges the elements into alphabetical order.
+
+```
+let someArray = ["orange", "apple", "watermelon", "lemon"]
+console.log(someArray.sort()) 
+
+// => [ 'apple', 'lemon', 'orange', 'watermelon' ]
+
+```
+
+If we attempt to use the same logic to sort a list of numbers we find that even though the elements are the number data type, the method coerces them into strings and arranges them into alphabetic order.
+
+```
+let someArray = [100, 2, 390, 28, 9, 6000]
+
+console.log(someArray.sort()) // => [ 100, 2, 28, 390, 6000, 9 ]
+console.log(typeof(someArray[0])) // => number
+```
+
+In order to use the sort method for the intended purpose of sorting by numerical order, it is necessary to pass a function to the sort method to compare the values.
+
+```
+let someArray = [100, 2, 390, 28, 9, 6000]
+
+console.log(someArray.sort((num1, num2) => {
+    return num1 - num2
+})); // => [ 2, 9, 28, 100, 390, 6000 ]
+```
+
+This callback function subtracts one element from the if num1 is less than num2, it will return a negative value and num1 will be sorted below num2 and vice versa if num1 is greater than num2.
 

@@ -1,15 +1,5 @@
-let someArray = ["pink", "blue", "green", "purple","yellow"]
+let someArray = [100, 2, 390, 28, 9, 6000]
 
-let list = someArray.map((element) => {
-    return '<li>' + element + '</li>'
-})
-
-console.log(list) // =>  
-
-[
-    '<li>pink</li>',
-    '<li>blue</li>',
-    '<li>green</li>',
-    '<li>purple</li>',
-    '<li>yellow</li>'
-  ]
+console.log(someArray.sort((num1, num2) => {
+    return num1 - num2
+})); // => [ 2, 9, 28, 100, 390, 6000 ]
