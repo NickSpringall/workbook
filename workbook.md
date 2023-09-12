@@ -254,12 +254,13 @@ Objects can be manipulated in many ways. For example, elements can be accessed u
 Constructor functions can be used to create object instances - 
 
 ```
-function Instrument(family, pitch, volume) {
+function Instrument(name, family, pitch, volume) {
+    this.name = name
     this.family = family
     this.pitch = pitch;
     this.volume = volume;
 }
-let violin = new Instrument("String", "treble", "")
+let violin = new Instrument("violin", "String", "treble", "")
 ```
 
 The values of the violin object can be manipulated by both dot and bracket notation
@@ -268,11 +269,37 @@ The values of the violin object can be manipulated by both dot and bracket notat
 violin.volume = "soft"
 console.log(violin) 
 
-// =>  { family: 'String', pitch: 'treble', volume: 'soft' }
+// =>  Instrument {
+    //     name: 'violin',
+    //     family: 'String',
+    //     pitch: 'treble',
+    //     volume: 'soft'
+//   }
 
 violin["volume"] = "loud"
 console.log(violin)
 
-// => { family: 'String', pitch: 'treble', volume: 'loud' }
+// Instrument {
+//     name: 'violin',
+//     family: 'String',
+//     pitch: 'treble',
+//     volume: 'loud'
+//   }
 ```
 
+we can similarly use the same notation to add new properties to the object. Though only brackets notation can be used if the property name is not a valid JavaScript identified (ie, no spaces or hyphons, cannot be within another variable, cannot begin with a number ect.). In these cases, bracket notation must be used
+
+```
+violin.timber = "maple"
+violin["size of instrument"] = "small"
+console.log(violin)
+
+// Instrument {
+//     name: 'violin',
+//     family: 'String',
+//     pitch: 'treble',
+//     volume: 'loud',
+//     timber: 'maple',
+//     'size of instrument': 'small'
+//   }
+```

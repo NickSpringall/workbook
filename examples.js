@@ -5,18 +5,47 @@ let someObject = {
 }
 
 
-function Instrument(family, pitch, volume) {
+function Instrument(name, family, pitch, volume) {
+    this.name = name
     this.family = family
     this.pitch = pitch;
     this.volume = volume;
 }
 
-let violin = new Instrument("String", "treble")
+let violin = new Instrument("violin", "String", "treble")
 
 console.log (violin)
 
 violin.volume = "soft"
-console.log(violin) // =>  { family: 'String', pitch: 'treble', volume: 'soft' }
+console.log(violin) 
+
+// =>  Instrument {
+    //     name: 'violin',
+    //     family: 'String',
+    //     pitch: 'treble',
+    //     volume: 'soft'
+//   }
 
 violin["volume"] = "loud"
 console.log(violin)
+
+// Instrument {
+//     name: 'violin',
+//     family: 'String',
+//     pitch: 'treble',
+//     volume: 'loud'
+//   }
+
+violin.timber = "maple"
+violin["size of instrument"] = "small"
+console.log(violin)
+
+// Instrument {
+//     name: 'violin',
+//     family: 'String',
+//     pitch: 'treble',
+//     volume: 'loud',
+//     timber: 'maple',
+//     size: 'small'
+//   }
+
