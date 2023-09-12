@@ -41,8 +41,7 @@ for (index = 0; index < someArray.length; index ++) {
 // [ 0, 1, 2 ]
 ```
 
-
-Functions are handled differently to the 
+Functions, which are essentially code that the code itself can call, must be defined and used with sequential logic, ie, they must be defined before they are called as the program will not have read the function definition if the program attempts to call it first.
 
 
 ## Q8 - Explain type coercion, using examples from the JavaScript programming language
