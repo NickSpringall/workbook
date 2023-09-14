@@ -64,15 +64,17 @@ class Car {
     // Math.floor converts this into an Integer
       return Math.floor(Math.random()*(max-min+1)+min);
   }
-  
+
+//   for loop iterates over the models array
   for (model of models) {
-
+    // defines make variable
+    // assigns it the value of the element found in the makes array at an index between 0 and the number of elements in the makes array
     make = makes[randomIntFromInterval(0,makes.length-1)]
+    // defines model variable
+    // assigns it the value of the element found in the models array at an index between 0 and the number of elements in the makes array 
     model = models[randomIntFromInterval(0,makes.length-1)]
-
+    // creates a new object instance of the Model class, passing the make and model variable just created as arguments
     mycar = new Model(make, model);
+    // logs the .show() method to the console
     console.log(mycar.show())
 }
-
-let x = Math.random()
-console.log(x)
