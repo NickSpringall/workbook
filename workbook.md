@@ -1,12 +1,25 @@
 ## Q3 - Outline a standard high level structure for a MERN stack application and explain the components
+https://www.simplilearn.com/tutorials/mongodb-tutorial/what-is-mern-stack-introduction-and-examples
 
-MERN is a web stack of Web development technologies. It consists of MongoDB, Express JS, React JS and Node.js. As all the technologies are JavaScript based, it allows for fast, scalable and robust web app development all based arounds the JavaScript language.
+MERN is a web stack of Web development technologies. It consists of MongoDB, Express.JS, React.JS and Node.js. As all the technologies are JavaScript based, it allows for fast, scalable and robust web app development using only JavaScript (along with JSON) to develop.
 
 ### Stack technologies -
-Mongodb is the 
+MongoDB is the document based database management system. It uses JSON based document structures instead of tables with columns and rows to store data. React.JS is a front end JavaScript framework, Node.JS allows JavaScript to run in the terminal through a server enviromnemt and finally Express.JS is a Node.JS web application backend framework for building restful APIs.
 
 ### Stack architecture - 
-MVC
+https://dev.to/kingsley/mern-stack-project-structure-best-practices-2adk
+https://shubhamjha25.medium.com/understanding-the-mvc-architecture-in-the-mern-stack-aff893abce50
+
+MERN stack projects will typically follow an MVC - Model, View, Controller structure. The MVC structure seperates the application into three discrete elements as seperate components that can be developed independantly.
+
+The Model component deals with the database. MongoDB is used here to store the application data.  
+
+React serves as the view component in the applictaion architecture. The React app runs client side and is rendered in the browser by creating the HTML and CSS which the browser renders to screen for the end user to see and interact with. When data is manipulated by the user or returned to react from the backend. The React app also handles the user input which is passed onto the controller. It also processed information recieved from the controller as JSON into HTML to be rendered by the browser through the DOM. 
+
+The controller/backend component in the MERN stack is an Express.js app running within the node.JS server environment. This handles the business logic of the application and makes calls to the MongoDB database to read and write. It handles this data with Models and Schemas to validate and sanitize the data coming from or being sent to the MongoDB database.
+
+Authentication/Validation requests are also handled by the Node/Express backend, making calls to the database to verify user information provided by the react frontend. By placing this business logic in the backend, away from the end user, this protects API endpoints from being accessed by unathenticated users.
+
 
 ## Q7 - Explain control flow, using an example from the JavaScript programming language
 
