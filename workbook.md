@@ -1,3 +1,13 @@
+## Q3 - Outline a standard high level structure for a MERN stack application and explain the components
+
+MERN is a web stack of Web development technologies. It consists of MongoDB, Express JS, React JS and Node.js. As all the technologies are JavaScript based, it allows for fast, scalable and robust web app development all based arounds the JavaScript language.
+
+### Stack technologies -
+Mongodb is the 
+
+### Stack architecture - 
+MVC
+
 ## Q7 - Explain control flow, using an example from the JavaScript programming language
 
 Control flow is the order in which lines or blocks of code are excecuted when run. By default, JavaScript is a sequentially executed programming language. This means that without encountering explicit logic or statements to alter the flow, code will be executed line by line, from top to bottom. 
@@ -318,10 +328,10 @@ console.log(Object.values(violin))
 //  => [ 'violin', 'String', 'treble', 'loud', 'maple', 'small' ]
 ```
 
-##Q13 For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes
+## Q13 - For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes
+
 
 ```js
-
 // Defines car class
 class Car {
     // constructor method assigns properties to the class
