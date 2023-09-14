@@ -10,7 +10,7 @@ class Car {
 
         // for example -
         // let newCar = new Car("Toyota") will create a new object instance "newCar" of the Car class with
-        // the value "Toyota" will be assigned carname property
+        // the value "Toyota" will be assigned to its carname property
       this.carname = brand;
     }
     // Declaring present method - returns a string interpolating 'I have a ' and the carname of the object
@@ -53,7 +53,15 @@ class Car {
 
   let models = Array.from(new Array(40), (x,i) => i + 1980)
 
+//   Declare function to pick a random number, takes 2 arguments, the upper and lower range (inclusive) for the random number to be between
   function randomIntFromInterval(min,max) { // min and max included
+    // Math.floor method rounds a number down to the nearest integer
+    // Math.random method returns a random number between 0 and 1
+
+    // the function calculates the difference between min and max +1 (to make it inclusive of the min and max value)
+    // It multiplies this by a random value between o and 1 to get a random number somewhere within the difference of min and max
+    // the min value is added to this to get a random value that is now between the min and max value
+    // Math.floor converts this into an Integer
       return Math.floor(Math.random()*(max-min+1)+min);
   }
   
@@ -65,3 +73,6 @@ class Car {
     mycar = new Model(make, model);
     console.log(mycar.show())
 }
+
+let x = Math.random()
+console.log(x)
