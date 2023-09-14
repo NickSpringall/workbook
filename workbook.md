@@ -20,7 +20,7 @@ Inside the loop the code meets a conditional if statement. The condition is asse
 
 It's important to note that the loop will still run even after the if condition has been met, skipping the if statement (as it now returns false) and logging the array. 
 
-```
+```js
 let someArray = [0, 1, 2, 3, 4]
 let newArray = []
 
@@ -52,7 +52,7 @@ Implicit type coercion is the process of converting data between data types auto
 
 JavaScript will only implicitly coerce values into strings, numbers or boolean values. It is important to understand how JavaScript 'decides' which type to coerce into so unforseen issues do not arise. For example, in the following code, JS will convert the boolean value 'true' to the number value '1', use the mathematical + operator to add the number 3.
 
-```
+```js
 let someNum = 3
 let someBool = true
 
@@ -64,7 +64,8 @@ console.log(typeof(someResult)) // => number
 
 wheras in the following code, providing 3 as a string value will result in both values being coerced into strings and the + concatinating them together.
 
-```let someString = "3"
+```js
+let someString = "3"
 let someNum = 3
 let someBool = true
 
@@ -78,7 +79,7 @@ JavaScript provides two equality comparison operators. If the developer wishes f
 
 for example the following code will log 'not the same type' because while the value is equal, the type is not.
 
-``` 
+```js
 let someNum = 3
 let someString = "3"
 
@@ -93,7 +94,7 @@ if (someNum === someString) {
 
 by comparison, the following code will log 'the same type' because javascript used type coercion to compare equal data types
 
-```
+```js
 if (someNum == someString) {
     console.log("the same type")
 } else {
@@ -105,7 +106,7 @@ console.log("not the same type")
 
 Types can also be coerced explicitly in JavaScript. Typically using built in JavaScript methods. Using the example above, using explicit type conversion, the string can be coerced into a number or vice versa to control how the program exectues the operation. 
 
-```
+```js
 let someString = "3"
 let someBool = true
 
@@ -117,7 +118,7 @@ console.log(typeof(someResult)) // => number
 
 Similarly, the boolean value can also be coerced into a string
 
-```
+```js
 let someString = "3"
 let someBool = true
 
@@ -129,7 +130,7 @@ console.log(typeof(someResult)) // => string
 
 It is important to note that there are limits to type coercion and not all values can be, or will return a useable value once coerced. While the array in the following code contains values that can individually coerced into a number. Though,the array object itself cannot be.
 
-```
+```js
 let someArray = [6, 4, "6", [6,"230", true]]
 
 console.log(Number(someArray)) // => NaN
@@ -137,7 +138,7 @@ console.log(Number(someArray)) // => NaN
 
 While the String function will output the values contained within the array as a string 
 
-```
+```js
 let someArray = [6, 4, "6", [6,"230", true]]
 
 console.log((String(someArray)))  // => 6,4,6,6,230,true
@@ -157,7 +158,7 @@ There are many ways to manipulate arrays in JavaScript. The primary way we ado t
 
 for removing or deleting elements, the pop() and push() methods can be used to remove the last element or add a new element to the end respectivly -
 
-```
+```js
 let someArray = [0, 1, 2, 3, 4]
 
 someArray.pop()
@@ -179,7 +180,7 @@ console.log(someArray) // => [ 0, 1, 2, 3, 4, [ 'a', 'sub', 'array' ], 5, 6, 7 ]
 
 Some other examples of the many array manipulation methods are the slice() and splice() methods. The slice() method is used to extract the value of some elements from an array and returning them to a new array, it takes the start and finish index of the elements to be extracted and does not alter the original array. splice() works similarly but removes the elements from the original array.
 
-```
+```js
 let someArray = [0, 1, 2, 3, 4, 5, 6, 7]
 
 let newArray = someArray.slice(2,5)
@@ -195,7 +196,7 @@ console.log(splicedArray) // => [ 2, 3, 4, 5, 6 ]
 
 the map() method iterates over each element, calling a callback function on each element and creating a new array of the returned values. This is extremely useful for many tasks, one example is creating an array of HTML elements from an array ready to pass onto the DOM - 
 
-```
+```js
 let someArray = ["pink", "blue", "green", "purple","yellow"]
 
 let list = someArray.map((element) => {
@@ -218,7 +219,7 @@ Array manipulation methods that do not alter the array, but rather make a copy (
 
 It is important to understand how JavaScript treates the data in each array element in some manipulation methods. For example, the sort() method will sort an array in the following example, we can see how the method rearranges the elements into alphabetical order.
 
-```
+```js
 let someArray = ["orange", "apple", "watermelon", "lemon"]
 console.log(someArray.sort()) 
 
@@ -228,7 +229,7 @@ console.log(someArray.sort())
 
 If we attempt to use the same logic to sort a list of numbers we find that even though the elements are the number data type, the method coerces them into strings and arranges them into alphabetic order.
 
-```
+```js
 let someArray = [100, 2, 390, 28, 9, 6000]
 
 console.log(someArray.sort()) // => [ 100, 2, 28, 390, 6000, 9 ]
@@ -237,7 +238,7 @@ console.log(typeof(someArray[0])) // => number
 
 In order to use the sort method for the intended purpose of sorting by numerical order, it is necessary to pass a function to the sort method to compare the values.
 
-```
+```js
 let someArray = [100, 2, 390, 28, 9, 6000]
 
 console.log(someArray.sort((num1, num2) => {
@@ -253,7 +254,7 @@ Objects can be manipulated in many ways. For example, elements can be accessed u
 
 Constructor functions can be used to create object instances - 
 
-```
+```js
 function Instrument(name, family, pitch, volume) {
     this.name = name
     this.family = family
@@ -265,7 +266,7 @@ let violin = new Instrument("violin", "String", "treble", "")
 
 The values of the violin object can be manipulated by both dot and bracket notation
 
-```
+```js
 violin.volume = "soft"
 console.log(violin) 
 
@@ -289,7 +290,7 @@ console.log(violin)
 
 We can similarly use the same notation to add new properties to the object. Though only brackets notation can be used if the property name is not a valid JavaScript identified (ie, no spaces or hyphons, cannot be within another variable, cannot begin with a number ect.). In these cases, bracket notation must be used.
 
-```
+```js
 violin.timber = "maple"
 violin["size of instrument"] = "small"
 console.log(violin)
@@ -307,7 +308,7 @@ console.log(violin)
 
 The Object.keys() and Object.Values() methods return arrays of the keys or values of an object respectively.
 
-```
+```js
 console.log(Object.keys(violin)) 
 
 // => [ 'name', 'family', 'pitch', 'volume', 'timber', 'size of instrument' ]
@@ -317,3 +318,88 @@ console.log(Object.values(violin))
 //  => [ 'violin', 'String', 'treble', 'loud', 'maple', 'small' ]
 ```
 
+##Q13 For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes
+
+```js
+
+// Defines car class
+class Car {
+    // constructor method assigns properties to the class
+    // it is automatically called when creating an object and used to pass unique values to the new object
+    constructor(brand) {
+        // the 'this' keyword is used to refer to a newly created object
+        // when creating a new car instance, the carname property will be assigned the brand value 
+        // passed as an argument to the class constructor 
+
+        // for example -
+        // let newCar = new Car("Toyota") will create a new object instance "newCar" of the Car class with
+        // the value "Toyota" will be assigned to its carname property
+      this.carname = brand;
+    }
+    // Declaring present method - returns a string interpolating 'I have a ' and the carname of the object
+    // Method will belong to each object as per a property
+    present() {
+      return 'I have a ' + this.carname;
+    }
+  }
+
+// Defines Model class which inherits all properties and methods from the Car class
+// Model is the child class and Car is the parent class
+  class Model extends Car {
+    constructor(brand, mod) {
+        // super keyword referes to the parent class, used to invoke its constructor
+        // in this case, the Car class' 'brand' constructor is invoked and a new Model object can be
+        // passed a 'brand' argument and the instance will contain the 'carname' property
+      super(brand);
+    //   mod argument passed to the passed to the constructor will be assigned to the model property
+      this.model = mod;
+    }
+    // show() method returns inherited present() method and interpolates it with ', it was made in ' and the model property for the object
+    show() {
+      return this.present() + ', it was made in ' + this.model;
+    }
+  }
+  
+//   define array variable with 3 string elements
+  let makes = ["Ford", "Holden", "Toyota"]
+
+
+// defines models variable and uses Array.from method to create a new array
+// Array.from takes an array/array like or other iterable oject to convert to an array and a function to call on each element as arguments
+
+// The Array constructor method as the first argument, 
+    // In this case the Array constructor is passed an integer (40) so creates an array of 40 empty slots
+
+// the second argument is the mapFn, an annonymous callback function, called on each element of the array
+    // the mapFn is passed the current element (x, in this case empty and unused) and the index currently being processed (i)
+    //  the function adds 1980 to the current element and this value is assigned to the index in the models array
+
+  let models = Array.from(new Array(40), (x,i) => i + 1980)
+
+//   Declare function to pick a random number, takes 2 arguments, the upper and lower range (inclusive) for the random number to be between
+  function randomIntFromInterval(min,max) { // min and max included
+    // Math.floor method rounds a number down to the nearest integer
+    // Math.random method returns a random number between 0 and 1
+
+    // the function calculates the difference between min and max +1 (to make it inclusive of the min and max value)
+    // It multiplies this by a random value between o and 1 to get a random number somewhere within the difference of min and max
+    // the min value is added to this to get a random value that is now between the min and max value
+    // Math.floor converts this into an Integer
+      return Math.floor(Math.random()*(max-min+1)+min);
+  }
+
+//   for loop iterates over the models array
+  for (model of models) {
+    // defines make variable
+    // assigns it the value of the element found in the makes array at an index between 0 and the number of elements in the makes array
+    make = makes[randomIntFromInterval(0,makes.length-1)]
+    // defines model variable
+    // assigns it the value of the element found in the models array at an index between 0 and the number of elements in the makes array 
+    model = models[randomIntFromInterval(0,makes.length-1)]
+    // creates a new object instance of the Model class, passing the make and model variable just created as arguments
+    mycar = new Model(make, model);
+    // logs the .show() method to the console
+    console.log(mycar.show())
+}
+
+```
