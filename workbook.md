@@ -1,3 +1,12 @@
+## Q2 - What are the most important aspects of quality software?
+
+Reliable
+Efficient
+Portable
+Testable
+Modifiable
+Understandable
+
 ## Q3 - Outline a standard high level structure for a MERN stack application and explain the components
 https://www.simplilearn.com/tutorials/mongodb-tutorial/what-is-mern-stack-introduction-and-examples
 
