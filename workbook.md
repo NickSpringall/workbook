@@ -40,6 +40,10 @@ The controller/backend component in the MERN stack is an Express.js app running 
 
 Authentication/Validation requests are also handled by the Node/Express backend, making calls to the database to verify user information provided by the react frontend. By placing this business logic in the backend, away from the end user, this protects API endpoints from being accessed by unathenticated users.
 
+## Q4 - A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
+
+A project such as developing a website requires many varied skills to succeed. These include techincal, organisational, social and business skills. 
+
 
 ## Q7 - Explain control flow, using an example from the JavaScript programming language
 
