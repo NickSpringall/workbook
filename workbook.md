@@ -208,7 +208,36 @@ In order for a program to use and interact with some data within a variable, it 
 
 JavaScript uses the following primitive data types; null, undefined, boolean, string, number, bigint annd symbol. It has one complex data type - object.
 
-Null and undefined are equal
+String data are type cast by wrapping the text in double or single quotes around the text. All primitive data types can be coerced or type cast into the string data type. In the example below, JavaScript will automatically coerce data types into string for string interpolation. 
+
+```
+let someString = "this is a string"
+console.log(typeof(someString))// => string
+
+let someNumber = 0
+console.log(typeof(someNumber)) // => number
+
+let someBool = true
+console.log(typeof(someBool)) // => Boolean
+
+console.log(typeof(someString + someNumber + someBool)) // => string
+```
+
+The number data type represent whole number ints as well as float point numbers. The plus symbol acts as a mathematical operator rather than a joining operator. Numbers can be a maximum of 15 digits long. For larger numbers, the bigint type must be used. Any variable that contains only a numeric value will be coerced into the number type by JavaScript.
+
+```js
+let someNum = 42
+let someOtherNum = 1329.333
+let notANum = "$30.00"
+
+console.log(typeof(someNum)) // => number
+console.log(typeof(notANum)) // => string
+```
+
+Bigints are used ot store number variables that are too large for the number type.
+
+the bigint type is similar to the number type except that is cannot be used on any methods in the built in JavaScript Math object, they must be coerced to number types first, thought precision will be lost beyond 15 digits. 
+
 
 ## Q10 - Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
 
@@ -378,7 +407,7 @@ console.log(Object.values(violin))
 
 ## Q12 - Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
 
-JSON syntax is very similar to JavaScript object, because of this, a JSON string can be seamlessly parsed into a JavaScript array object with the JSON.parse() method to be manipulated. Conversly, in order to send data to an API or for any other reason, a JavaScript object can also be easily converted into a JSON string with the JSON.stringify().
+JSON syntax is very similar to JavaScript objects. Because of this, a JSON string can be seamlessly parsed into a JavaScript array object with the JSON.parse() method to be manipulated. Conversly, in order to send data to an API or for any other reason, a JavaScript object can also be easily converted into a JSON string with the JSON.stringify().
 
 In the following example a const 'max' is created by parseing the 'info' JSON string const.
 
