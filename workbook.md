@@ -234,10 +234,20 @@ console.log(typeof(someNum)) // => number
 console.log(typeof(notANum)) // => string
 ```
 
-Bigints are used ot store number variables that are too large for the number type.
+Bigints are used ot store number variables that are too large for the number type. They are defined by placing an n after the last digit of the variable.
 
-the bigint type is similar to the number type except that is cannot be used on any methods in the built in JavaScript Math object, they must be coerced to number types first, thought precision will be lost beyond 15 digits. 
+The bigint type is similar to the number type except that is cannot be used on any methods in the built in JavaScript Math object. In order to use Math object methods, they must be coerced to number types first, though precision will be lost beyond 15 digits. 
 
+```js
+let someBigint = 123456789123456789123n
+
+console.log(typeof(someBigint)) // => bigint
+
+bigintNumber = Number(someBigint)
+
+console.log(bigintNumber) // => 123456789123456800000
+console.log(someBigint) // => 123456789123456789123n
+```
 
 ## Q10 - Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
 

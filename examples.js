@@ -1,6 +1,8 @@
-let someNum = 42
-let someOtherNum = 1329.333
-let notANum = "$30.00"
+let someBigint = 123456789123456789123n
 
-console.log(typeof(someNum)) // => number
-console.log(typeof(notANum)) // => string
+console.log(typeof(someBigint)) // => bigint
+
+bigintNumber = Number(someBigint)
+
+console.log(bigintNumber) // => 123456789123456800000
+console.log(someBigint) // => 123456789123456789123n
