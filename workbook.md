@@ -210,7 +210,7 @@ JavaScript uses the following primitive data types; null, undefined, boolean, st
 
 String data are type cast by wrapping the text in double or single quotes around the text. All primitive data types can be coerced or type cast into the string data type. In the example below, JavaScript will automatically coerce data types into string for string interpolation. 
 
-```
+```js
 let someString = "this is a string"
 console.log(typeof(someString))// => string
 
@@ -247,6 +247,17 @@ bigintNumber = Number(someBigint)
 
 console.log(bigintNumber) // => 123456789123456800000
 console.log(someBigint) // => 123456789123456789123n
+```
+
+Boolean data types are either true or false. Any other value that isn't a null value will be true when coersed into a boolean type and a boolean value will be represented as 1 or 0 for true and false respectively when coerced into a number.
+
+The object or array data type is used to store a collection of indexed data that can be iterated over.
+
+```js
+let list = ["one", "two", "three", 4]
+
+console.log(typeof(list)) // => object
+console.log(list[2]) // => three
 ```
 
 ## Q10 - Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
