@@ -1,4 +1,15 @@
+## Q1 - Provide an overview and description of a standard source control process for a large project
+Source control for a large project at the most fundamental level remains similar to a smaller project. Developers will fork and clone the codebase from a repository, work on their feature, push it and create a pull request to be reviewed before being merged with the main branch.
+
+As projects get larger, it can be benefitial to split the project into compeletely seperate repositories, this is known as a multi-repo repository stratergy. Managing the codebase in this way facilitates modularity and allow for seperate teams to work independant of the rest of the project. This has many advantages including ease of modular code release and allows for seamless intergration of AGILE principles into the development process. Companies such as Netflix, Amazon and Lyft are examples of large companies with extensive codebases that implement this approach.
+
+This process allows for each library to be versioned indepentantly of the rest of the project. While one advantage to this is that teams can work at their own pace and update their libraries independantly, careful management is required to ensure that libraries across repos are adapted together. Teams must comunicate to ensure that changes incorperated do not break code by creating changes in another teams repo that will cause tests to fail.
+
+A hybrid-repo approach uses tools to assist in this synchronisation by providing CLI tools to excecute commands across all repos at the same time. 
+
+
 ## Q2 - What are the most important aspects of quality software?
+https://www.silasreinagel.com/blog/2016/11/15/the-seven-aspects-of-software-quality/
 
 Reliable
 Efficient
@@ -351,7 +362,6 @@ console.log(Object.values(violin))
 ```
 
 ## Q13 - For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes
-
 
 ```js
 // Defines car class
