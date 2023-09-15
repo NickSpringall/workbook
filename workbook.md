@@ -410,13 +410,31 @@ console.log(max)
 
 This new object can now be manipulated as per any other array object. It is also worth noting that JavaScript seamlessly coerces the data types as we would expect.
 
+```js
+console.log(typeof(max.age)) // => number
+console.log(typeof(max.livesInAustralia)) // => boolean
+console.log(typeof(max.favouriteFood)) // => object
+console.log(typeof(max.name)) // => string
 ```
+
+In order to convert an object into JSON, we use the JSON.stringify() method.
+
+```js
+const max = {
+  name: 'max',
+  age: 40,
+  nationality: 'Italian',
+  favouriteFood: [ 'pasta', 'pizza', 'gnocci' ],
+  livesInAustralia: true
+}
+
+const maxJSON = JSON.stringify(max)
+
+console.log(maxJSON) 
+// => {"name":"max","age":40,"nationality":"Italian","favouriteFood":["pasta","pizza","gnocci"],"livesInAustralia":true}
+console.log(typeof(maxJSON)) 
+// => string
 ```
-
-
-
-
-JSON.stringify() method creates a JSON string
 
 ## Q13 - For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes
 
