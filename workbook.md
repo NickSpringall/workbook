@@ -7,6 +7,9 @@ This process allows for each library to be versioned indepentantly of the rest o
 
 A hybrid-repo approach uses tools to assist in this synchronisation by providing CLI tools to excecute commands across all repos at the same time. 
 
+https://kinsta.com/blog/monorepo-vs-multi-repo/
+https://www.linkedin.com/pulse/how-use-version-control-systems-large-multi-part-software-hadi-safari
+
 
 ## Q2 - What are the most important aspects of quality software?
 https://www.silasreinagel.com/blog/2016/11/15/the-seven-aspects-of-software-quality/
@@ -43,6 +46,11 @@ Authentication/Validation requests are also handled by the Node/Express backend,
 ## Q4 - A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
 A project such as developing a website requires many varied skills to succeed. These include techincal, organisational, social and business skills. 
+
+Firstly, the project will require technical skills in order to produce the product for the client. These are web development skills for a given stack which has been decided on for the project. These will include knowledge of a front and back end development systems, database development systems and general computer knowledge required to use and build with these software. The required web development skills also include the problem solving skills specific to web development, such as searching for fixes to encountered bugs online or possible solutions to unforseen issues that come along in the development process. 
+
+Organisational skills will be required to ensure deadlines are met by using the skills required to adequatly plan and delegate the project into its tasks. This includes knowledge and experience with a planning system such as Trello along with general knowledge of the web development process in order to assign tasks and accurately estimate completion times.
+
 
 
 ## Q7 - Explain control flow, using an example from the JavaScript programming language
