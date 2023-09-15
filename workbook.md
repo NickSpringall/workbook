@@ -45,12 +45,15 @@ Authentication/Validation requests are also handled by the Node/Express backend,
 
 ## Q4 - A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
 
-A project such as developing a website requires many varied skills to succeed. These include techincal, organisational, social and business skills. 
+A project such as developing a website requires many varied skills to succeed. These include technical, organisational, social and business skills. 
 
 Firstly, the project will require technical skills in order to produce the product for the client. These are web development skills for a given stack which has been decided on for the project. These will include knowledge of a front and back end development systems, database development systems and general computer knowledge required to use and build with these software. The required web development skills also include the problem solving skills specific to web development, such as searching for fixes to encountered bugs online or possible solutions to unforseen issues that come along in the development process. 
 
 Organisational skills will be required to ensure deadlines are met by using the skills required to adequatly plan and delegate the project into its tasks. This includes knowledge and experience with a planning system such as Trello along with general knowledge of the web development process in order to assign tasks and accurately estimate completion times.
 
+Business skills are required in order to successfuly ensure the team is all paid for and profitable. Knowledge of legal requirements is also required to ensure the team is not exposed to liability and they are insured at their place of work. General business knowledge will also assist in informing the team of the requirements and expectations of a small business client.
+
+High quality communication skills are critical to the success of the project. These is required to ensure the team members communicate effectively between themselves and also the team communicates effectively with the customer. Good client communication ensures that every stakeholder is on the same page. This will help avoid dissapointment or confusion that can lead to a poor outcome or expensive missunderstandings that require work to be redone. 
 
 
 ## Q7 - Explain control flow, using an example from the JavaScript programming language
