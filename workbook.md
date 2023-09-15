@@ -376,6 +376,48 @@ console.log(Object.values(violin))
 //  => [ 'violin', 'String', 'treble', 'loud', 'maple', 'small' ]
 ```
 
+## Q12 - Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
+
+JSON syntax is very similar to JavaScript object, because of this, a JSON string can be seamlessly parsed into a JavaScript array object with the JSON.parse() method to be manipulated. Conversly, in order to send data to an API or for any other reason, a JavaScript object can also be easily converted into a JSON string with the JSON.stringify().
+
+In the following example a const 'max' is created by parseing the 'info' JSON string const.
+
+```js
+const info = `{
+    "name": "max",
+    "age": 40,
+    "nationality": "Italian",
+    "favouriteFood": [
+        "pasta",
+        "pizza",
+        "gnocci"
+    ],
+    "livesInAustralia": true
+}`
+
+const max = JSON.parse(info);
+
+console.log(max)
+
+// => {
+//   name: 'max',
+//   age: 40,
+//   nationality: 'Italian',
+//   favouriteFood: [ 'pasta', 'pizza', 'gnocci' ],
+//   livesInAustralia: true
+// }
+```
+
+This new object can now be manipulated as per any other array object. It is also worth noting that JavaScript seamlessly coerces the data types as we would expect.
+
+```
+```
+
+
+
+
+JSON.stringify() method creates a JSON string
+
 ## Q13 - For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes
 
 ```js
