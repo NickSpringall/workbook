@@ -22,8 +22,8 @@ Portable - Portable software contains code that is not tightly coupled to one pl
 
 Testable - Testability in code goes hand in hand with reliability. It helps ensure that software is robust and performs as expected. Software testability, when executed using test driven development, helps greatly across the entire development process. By planning and testing discrete portions of definable work within a larger project, each part is ensured to function reliabily before being integreated with the larger codebase.
 
+Modifiable - Modifiable software is flexible software than can be readily changed or updated to suit the needs of the end user. For example, it shouldn't require The qualities above all play a part in ensureing software is modifiable. 
 
-Modifiable
 Understandable
 
 ## Q3 - Outline a standard high level structure for a MERN stack application and explain the components
