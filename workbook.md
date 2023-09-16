@@ -14,8 +14,10 @@ https://www.linkedin.com/pulse/how-use-version-control-systems-large-multi-part-
 ## Q2 - What are the most important aspects of quality software?
 https://www.silasreinagel.com/blog/2016/11/15/the-seven-aspects-of-software-quality/
 
-Reliable
-Efficient
+Reliablilty - Software needs to be reliable to ensure it functions as intended thorugh all possible use cases without failure. For example, a piece of software that controls bank transactions failing due to an uncaught error would greatly and negatively impact its users.
+
+Efficiency - Efficiant software is software that is written in such a way that it doesn't use unnecessary resources to accomplish it's task. One example of inefficiancy in software is software that is slow due to poorly written API calls that return unnecessary data that the sortware must process but is not used. Inefficiant software can also perform slower than necessary as it is wasting computer resource by performing operations that are more resource intensive than necessary or operations that are unnecessary altogether.
+
 Portable
 Testable
 Modifiable
@@ -251,7 +253,7 @@ console.log(someBigint) // => 123456789123456789123n
 
 Boolean data types are either true or false. Any other value that isn't a null value will be true when coersed into a boolean type and a boolean value will be represented as 1 or 0 for true and false respectively when coerced into a number.
 
-The object or array data type is used to store a collection of indexed data that can be iterated over.
+The object data type is used to store a collection of indexed data that can be iterated over. It will typically refer to a 'thing' that has properties or methods. Arrays are a type of object that use numbers to index their data.
 
 ```js
 let list = ["one", "two", "three", 4]
@@ -259,6 +261,7 @@ let list = ["one", "two", "three", 4]
 console.log(typeof(list)) // => object
 console.log(list[2]) // => three
 ```
+
 
 ## Q10 - Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
 
@@ -278,7 +281,7 @@ console.log(someArray) // => [ 0, 1, 2, 3, 'new element' ]
 
 the push() method is highly flexible as it can be used to add any data type or multiple elements to the array -
 
-```
+```js
 let someArray = [0, 1, 2, 3, 4]
 
 someArray.push(["a","sub", "array"])
