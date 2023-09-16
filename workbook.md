@@ -18,8 +18,11 @@ Reliablilty - Software needs to be reliable to ensure it functions as intended t
 
 Efficiency - Efficiant software is software that is written in such a way that it doesn't use unnecessary resources to accomplish it's task. One example of inefficiancy in software is software that is slow due to poorly written API calls that return unnecessary data that the sortware must process but is not used. Inefficiant software can also perform slower than necessary as it is wasting computer resource by performing operations that are more resource intensive than necessary or operations that are unnecessary altogether.
 
-Portable
-Testable
+Portable - Portable software contains code that is not tightly coupled to one platform and requires minimal work to move it to another platform. Interpreted languages like JavaScript are intrinsicly mobile, though using libraries and writing code that has as few platform specific dependancies helps ensure compelte portability. Issues with non-portable software include maintenance problems, scaling difficulties and issues with readability/understandability.
+
+Testable - Testability in code goes hand in hand with reliability. It helps ensure that software is robust and performs as expected. Software testability, when executed using test driven development, helps greatly across the entire development process. By planning and testing discrete portions of definable work within a larger project, each part is ensured to function reliabily before being integreated with the larger codebase.
+
+
 Modifiable
 Understandable
 
