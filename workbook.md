@@ -188,7 +188,7 @@ console.log("not the same type")
 // => "the same type"
 ```
 
-Types can also be coerced explicitly in JavaScript. Typically using built in JavaScript methods. Using the example above, using explicit type conversion, the string can be coerced into a number or vice versa to control how the program executes the operation. 
+Types can also be coerced explicitly in JavaScript, typically using built in JavaScript methods. Using the example above, explicit type conversion can force the coercion of the string into a number or vice versa to control how the program executes the operation. 
 
 ```js
 let someString = "3"
@@ -200,19 +200,19 @@ console.log(someResult) // => 4
 console.log(typeof(someResult)) // => number
 ```
 
-Similarly, the boolean value can also be coerced into a string
+Similarly, the boolean value can be explicitly coerced into a string.
 
 ```js
 let someString = "3"
 let someBool = true
 
-someResult = Number(someString) + String(someBool)
+someResult = someString + String(someBool)
 
 console.log(someResult) // => 3true
 console.log(typeof(someResult)) // => string
 ```
 
-It is important to note that there are limits to type coercion and not all values can be, or will return a useable value once coerced. While the array in the following code contains values that can individually coerced into a number. Though,the array object itself cannot be.
+It is important to note that there are limits to type coercion and not all values can be coerced or will return a useable value once coerced. While the array in the following code contains values that can be individually coerced into a number, the array object itself cannot be.
 
 ```js
 let someArray = [6, 4, "6", [6,"230", true]]
@@ -220,7 +220,7 @@ let someArray = [6, 4, "6", [6,"230", true]]
 console.log(Number(someArray)) // => NaN
 ```
 
-While the String function will output the values contained within the array as a string 
+However the String method can be used to coerce the array. Returning all values contained within the array as a string 
 
 ```js
 let someArray = [6, 4, "6", [6,"230", true]]
