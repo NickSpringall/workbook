@@ -63,24 +63,17 @@ High quality communication skills are critical to the success of the project. Th
 
 ## Q5 - With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
 
-python API project
+In order to complete my python/flask API project I was required to have knowledge of the python programming language, the flask framework and general knowledge of database framework model/controller architecture. It was also necessary to have knowledge of sql syntax and the postgresql database management system. A solid understanding of the functionality of database management systems was required for its use.
 
-necessary knowledge - 
-- python programming language
-- understanding of API model/controller architecture
-- understanding of order of development (what needs to be developed first in order for other stuff to work)
-- psql
-- understanding how a database management system works
-- planning skills to hit deadline and efficiently use time 
-- time management skills to get it done
+I also needed knowledge of the model/controller development process. This includes knowledge of the order of operations. For example, it was necessary to develop  the models before the controllers. All of the above mentioned knowledge was built upon during the project as I possessed an insufficient skillset at the outset to complete the project. Self-directed learning skills were required to overcome this challenge.
+
+Time management skills were required in order to ensure that the deadline was met.
 
 ## Q6 - With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature
 
-- Python skills were sufficient to complete the task though deeper understanding would have allowed for a better result with more complex features.
-- As the project was a learning experience, system architecture, database knowledge, development process and programming language skills all improved significantly during the process. On near future projects I will need to push myself to see similar knowledge and skill improvements
-- As I'm poor at planning generally, I need to overemphasis this element of development in future projects to ensure adequate planning occurs.
+At the time of submission, my python skills were sufficient to complete the task though deeper understanding would have allowed for a better result with more complex features. As the project was a learning experience, my understanding of system architecture, database knowledge, development processes and programming language skills all improved significantly during the process. On future projects, I will need to push myself to see similar knowledge and skill improvements to further broaden my abilities as a developer.
 
-and time managements skills all need to be more actively managed, linked to planning, using clear expected outcomes for coding sessions and try not to get side tracked.
+As I'm poor at planning generally, I struggled to break down the project into small, manageable steps. I will need to emphasise this element of development in future projects to ensure that adequate planning occurs. I also struggled with time management. Balancing the project with other work commitments was difficult. I will need to improve my time management skills by setting myself clear and achievable outcomes for coding sessions and to try not to get side tracked.
 
 
 ## Q7 - Explain control flow, using an example from the JavaScript programming language
@@ -220,7 +213,7 @@ let someArray = [6, 4, "6", [6,"230", true]]
 console.log(Number(someArray)) // => NaN
 ```
 
-However the String method can be used to coerce the array. Returning all values contained within the array as a string 
+However, the String method can be used to coerce the array, returning all values contained within the array as a string.
 
 ```js
 let someArray = [6, 4, "6", [6,"230", true]]
@@ -234,7 +227,7 @@ In order for a program to use and interact with some data within a variable, it 
 
 JavaScript uses the following primitive data types; null, undefined, boolean, string, number, bigint and symbol. It has one complex data type - object.
 
-String data are type cast by wrapping the text in double or single quotes around the text. All primitive data types can be coerced or type cast into the string data type. In the example below, JavaScript will automatically coerce data types into string for string interpolation. 
+String data are type cast by wrapping the text in double or single quotes. All primitive data types can be coerced or type cast into the string data type. In the example below, JavaScript will automatically coerce data types into string for string interpolation. 
 
 ```js
 let someString = "this is a string"
@@ -249,7 +242,7 @@ console.log(typeof(someBool)) // => Boolean
 console.log(typeof(someString + someNumber + someBool)) // => string
 ```
 
-The number data type represent whole number ints as well as float point numbers. The plus symbol acts as a mathematical operator rather than a joining operator. Numbers can be a maximum of 15 digits long. For larger numbers, the bigint type must be used. Any variable that contains only a numeric value will be coerced into the number type by JavaScript.
+The number data type represents whole number integers as well as float point numbers. The plus symbol acts as a mathematical operator rather than a joining operator. Numbers can be a maximum of 15 digits long. For larger numbers, the bigint type must be used. Any variable that contains only a numeric value will be coerced into the number type by JavaScript.
 
 ```js
 let someNum = 42
@@ -260,7 +253,7 @@ console.log(typeof(someNum)) // => number
 console.log(typeof(notANum)) // => string
 ```
 
-Bigints are used to store number variables that are too large for the number type. They are defined by placing an n after the last digit of the variable.
+Bigints are used to store number variables that are too large for the number type. They are defined by placing an 'n' after the last digit of the variable.
 
 The bigint type is similar to the number type except that is cannot be used on any methods in the built in JavaScript Math object. In order to use Math object methods, they must be coerced to number types first, though precision will be lost beyond 15 digits. 
 
@@ -275,7 +268,7 @@ console.log(bigintNumber) // => 123456789123456800000
 console.log(someBigint) // => 123456789123456789123n
 ```
 
-Boolean data types are either true or false. Any other value that isn't a null value will be true when coerced into a boolean type and a boolean value will be represented as 1 or 0 for true and false respectively when coerced into a number.
+Boolean data types are either true or false. Any value that isn't a null value will be true when coerced into a boolean type. A boolean value will be represented as 1 or 0 for true and false respectively when coerced into a number.
 
 The object data type is used to store a collection of indexed data that can be iterated over. It will typically refer to a 'thing' that has properties or methods. Arrays are a type of object that use numbers to index their data.
 
@@ -289,9 +282,9 @@ console.log(list[2]) // => three
 
 ## Q10 - Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
 
-There are many ways to manipulate arrays in JavaScript. The primary way we ado this is through the use of built in JavaScript methods to achieve just about anything you would wish to do to an array.
+There are many ways to manipulate arrays in JavaScript. The primary way we do this is through the use of built in JavaScript methods to achieve just about anything you would wish to do to an array.
 
-for removing or deleting elements, the pop() and push() methods can be used to remove the last element or add a new element to the end respectively -
+For removing or deleting elements, the pop() and push() methods can be used to remove the last element or add a new element to the end respectively.
 
 ```js
 let someArray = [0, 1, 2, 3, 4]
@@ -303,7 +296,7 @@ someArray.push("new element")
 console.log(someArray) // => [ 0, 1, 2, 3, 'new element' ]
 ```
 
-the push() method is highly flexible as it can be used to add any data type or multiple elements to the array -
+The push() method is highly flexible as it can be used to add any data type or multiple elements to the array.
 
 ```js
 let someArray = [0, 1, 2, 3, 4]
@@ -313,7 +306,7 @@ someArray.push(5,6,7,)
 console.log(someArray) // => [ 0, 1, 2, 3, 4, [ 'a', 'sub', 'array' ], 5, 6, 7 ]
 ```
 
-Some other examples of the many array manipulation methods are the slice() and splice() methods. The slice() method is used to extract the value of some elements from an array and returning them to a new array, it takes the start and finish index of the elements to be extracted and does not alter the original array. splice() works similarly but removes the elements from the original array.
+Some other examples of the many array manipulation methods are the slice() and splice() methods. The slice() method is used to extract the value of some elements from an array and return them to a new array. It takes the start and finish index of the elements to be extracted and does not alter the original array. Splice() works similarly but removes the elements from the original array.
 
 ```js
 let someArray = [0, 1, 2, 3, 4, 5, 6, 7]
@@ -329,7 +322,7 @@ console.log(someArray) // =>[ 0, 1, 7 ]
 console.log(splicedArray) // => [ 2, 3, 4, 5, 6 ]
 ```
 
-the map() method iterates over each element, calling a callback function on each element and creating a new array of the returned values. This is extremely useful for many tasks, one example is creating an array of HTML elements from an array ready to pass onto the DOM - 
+The map() method iterates over each element, calling a callback function on each element and creating a new array of the returned values. This is extremely useful for many tasks. One example is creating an array of HTML elements from an array ready to pass onto the DOM.
 
 ```js
 let someArray = ["pink", "blue", "green", "purple","yellow"]
@@ -352,7 +345,7 @@ console.log(list) // =>
 Array manipulation methods that do not alter the array, but rather make a copy (such as slice() and map()) are known as non-destructive methods. In contrast, destructive methods alter the array variable itself in some way (such as splice() and pop()).
 
 
-It is important to understand how JavaScript treats the data in each array element in some manipulation methods. For example, the sort() method will sort an array in the following example, we can see how the method rearranges the elements into alphabetical order.
+It is important to understand how JavaScript treats the data in each array element in some manipulation methods. In the following example, we can see how the sort() method rearranges the elements into alphabetical order.
 
 ```js
 let someArray = ["orange", "apple", "watermelon", "lemon"]
@@ -362,7 +355,7 @@ console.log(someArray.sort())
 
 ```
 
-If we attempt to use the same logic to sort a list of numbers we find that even though the elements are the number data type, the method coerces them into strings and arranges them into alphabetic order.
+If we attempt to use the same logic to sort a list of numbers, we find that even though the elements are the number data type, the method coerces them into strings and arranges them into alphabetic order.
 
 ```js
 let someArray = [100, 2, 390, 28, 9, 6000]
@@ -381,13 +374,13 @@ console.log(someArray.sort((num1, num2) => {
 })); // => [ 2, 9, 28, 100, 390, 6000 ]
 ```
 
-This callback function subtracts one element from the if num1 is less than num2, it will return a negative value and num1 will be sorted below num2 and vice versa if num1 is greater than num2.
+This callback function subtracts one element from the next. If num1 is less than num2, it will return a negative value and num1 will be sorted below num2 and vice versa if num1 is greater than num2.
 
 ## Q11 Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
 
 Objects can be manipulated in many ways. For example, elements can be accessed using dot or bracket notation, values and properties can be enumerated in several ways and elements can be manipulated with operators.
 
-Constructor functions can be used to create object instances - 
+Constructor functions can be used to create object instances.
 
 ```js
 function Instrument(name, family, pitch, volume) {
@@ -399,7 +392,7 @@ function Instrument(name, family, pitch, volume) {
 let violin = new Instrument("violin", "String", "treble", "")
 ```
 
-The values of the violin object can be manipulated by both dot and bracket notation
+The values of the violin object can be manipulated by both dot and bracket notation.
 
 ```js
 violin.volume = "soft"
@@ -423,7 +416,7 @@ console.log(violin)
     //   }
 ```
 
-We can similarly use the same notation to add new properties to the object. Though only brackets notation can be used if the property name is not a valid JavaScript identified (ie, no spaces or hyphens, cannot be within another variable, cannot begin with a number etc.). In these cases, bracket notation must be used.
+Similarly, we can use the same notation to add new properties to the object, though only brackets notation can be used if the property name is not a valid JavaScript identifier (ie, no spaces or hyphens, cannot be within another variable, cannot begin with a number etc.). In these cases, bracket notation must be used.
 
 ```js
 violin.timber = "maple"
@@ -457,7 +450,7 @@ console.log(Object.values(violin))
 
 JSON syntax is very similar to JavaScript objects. Because of this, a JSON string can be seamlessly parsed into a JavaScript array object with the JSON.parse() method to be manipulated. Conversely, in order to send data to an API or for any other reason, a JavaScript object can also be easily converted into a JSON string with the JSON.stringify().
 
-In the following example a const 'max' is created by parsing the 'info' JSON string const.
+In the following example, a variable 'max' is created by parsing the 'info' JSON string const.
 
 ```js
 const info = `{
@@ -472,7 +465,7 @@ const info = `{
     "livesInAustralia": true
 }`
 
-const max = JSON.parse(info);
+let max = JSON.parse(info);
 
 console.log(max)
 
